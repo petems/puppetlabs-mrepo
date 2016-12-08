@@ -17,7 +17,7 @@ RSpec.configure do |c|
     hosts.each do |host|
       on host, puppet('module', 'install', 'puppetlabs-stdlib -v 4.12.0'), { :acceptable_exit_codes => [0] }
       on host, puppet('module', 'install', 'puppetlabs-apache -v 0.6.0'), { :acceptable_exit_codes => [0] }
-      on host, puppet('module', 'install', 'puppetlabs-vcsrepo -v 0.0.3'), { :acceptable_exit_codes => [0] }
+      on host, puppet('module', 'install', 'puppetlabs-vcsrepo -v 0.0.4'), { :acceptable_exit_codes => [0] }
       on host, puppet('module', 'install', 'puppet-staging -v 2.0.0'), { :acceptable_exit_codes => [0] }
     end
   end
